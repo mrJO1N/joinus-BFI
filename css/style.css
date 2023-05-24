@@ -1,0 +1,33 @@
+.inputs {
+  width: 50vw;
+}
+
+#code {
+  height: 80vh;
+  width: 100vw;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+}
+
+#input {
+  height: 20vh;
+  width: 30vw;
+  background-color: rgb(33, 22, 62);
+  color: rgb(18, 210, 169);
+  position: absolute;
+}
+
+canvas {
+  margin-left: 30vw;
+  background-color: rgb(0, 68, 60);
+  height: 20vh;
+  width: 70vw;
+  background-color: rgb(0, 68, 60);
+  color: #ffbebe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
