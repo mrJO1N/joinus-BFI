@@ -26,6 +26,10 @@
   color: #ffbebe;
 }
 
+output {
+	background-color: rgb(0, 68, 60);
+}
+
 * {
   margin: 0;
   padding: 0;
