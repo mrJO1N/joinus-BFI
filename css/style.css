@@ -17,7 +17,7 @@
   position: absolute;
 }
 
-canvas {
+#out {
   margin-left: 30vw;
   background-color: rgb(0, 68, 60);
   height: 20vh;
