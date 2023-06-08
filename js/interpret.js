@@ -1,8 +1,9 @@
 /** Interpreter variables */
 // Create a new 30,000 size array, with each cell initialized with the value of 0. Memory can expand.
 const MEMORY_SIZE = 30_000,
-  memory = new Array(MEMORY_SIZE).fill(0);
-// Address stack. Used to track addresses (index) of left brackets
+  memory = new Array(MEMORY_SIZE).fill(0),
+  // Address stack. Used to track addresses (index) of left brackets
+  delayMs = 1_000;
 
 let programmStr = "",
   astack = [],
@@ -12,6 +13,15 @@ let programmStr = "",
   ipointer = 0,
   // Memory pointer (Points to a cell in MEMORY)
   mpointer = 0;
+
+function delay() {
+  let start = Date.now(),
+    now = start;
+  while (now - start < delayMs) {
+    now = Date.now();
+  }
+  console.log("lel");
+}
 
 function setBFProgrammCode(localProgrammCodeStr) {
   programmStr = localProgrammCodeStr;
@@ -93,6 +103,7 @@ function interpret() {
               if (count) count--;
               else break;
             }
+            // delay();
           }
         }
         break;
@@ -108,7 +119,6 @@ function interpret() {
     }
     ipointer++;
   }
-  console.log(outputStr);
   return outputStr;
 }
 
